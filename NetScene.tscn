@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7ic7fkmduce5"]
+
+[ext_resource type="PackedScene" uid="uid://cqv6pxdo1ttdt" path="res://NetCATH.tscn" id="1_iihue"]
+[ext_resource type="PackedScene" uid="uid://bes2xcegc7iu7" path="res://rightArrow.tscn" id="2_ygbpt"]
+[ext_resource type="PackedScene" uid="uid://tnhv6xwpfbeh" path="res://upArrow.tscn" id="3_a1t46"]
+[ext_resource type="PackedScene" uid="uid://c57vn4hmnjbvo" path="res://downArrow.tscn" id="4_emwoc"]
+[ext_resource type="PackedScene" uid="uid://ggx5bcrjr172" path="res://leftArrow.tscn" id="5_1j53i"]
+[ext_resource type="Script" path="res://leftArrow.gd" id="6_fs172"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Area2D" parent="." instance=ExtResource("1_iihue")]
+position = Vector2(-1, 6)
+
+[node name="Area2D2" parent="." instance=ExtResource("2_ygbpt")]
+position = Vector2(459, 2)
+
+[node name="Area2D3" parent="." instance=ExtResource("3_a1t46")]
+position = Vector2(-5, -434)
+
+[node name="Area2D4" parent="." instance=ExtResource("4_emwoc")]
+position = Vector2(-1, 490)
+
+[node name="Area2D5" parent="." instance=ExtResource("5_1j53i")]
+position = Vector2(-305, -6)
+script = ExtResource("6_fs172")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://hpu6heeptxmy"]
+
+[ext_resource type="Texture2D" uid="uid://dvapla3tggq4t" path="res://assets/Character.png" id="1_la638"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vuhor"]
+size = Vector2(147, 326)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="character" type="Sprite2D" parent="."]
+position = Vector2(20, 0)
+texture = ExtResource("1_la638")
+hframes = 2
+vframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12.5, 5)
+shape = SubResource("RectangleShape2D_vuhor")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
