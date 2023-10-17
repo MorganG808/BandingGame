@@ -4,18 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://1gcrrm7chc6i" path="res://assets/sign.png" id="1_ijq2o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qfh3r"]
-size = Vector2(217, 494)
+size = Vector2(857.5, 273)
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource("1_i6hr4")
 
 [node name="Sign" type="Sprite2D" parent="."]
-position = Vector2(-1, 1)
-scale = Vector2(0.58941, 0.582465)
+position = Vector2(2, -1.90735e-06)
+scale = Vector2(0.67003, 0.665806)
 texture = ExtResource("1_ijq2o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -1)
+position = Vector2(-336, -5)
 shape = SubResource("RectangleShape2D_qfh3r")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
